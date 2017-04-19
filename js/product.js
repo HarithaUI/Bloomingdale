@@ -47,10 +47,10 @@ $(document).ready(function() {
 			$(".order-lbl .glyphicon").removeClass("glyphicon-plus").addClass("glyphicon-minus");
 			$("#order-summary").css("display", "block");
 			/* $('#selname').html('<p>' + $('#name h4').html() + '</p>');*/
-			$('#selorder').html('<p> Order SubTotal: ' + $('#price h3 strong').html() + '</p>');
+			$('#selorder').html('<p> Order SubTotal: ' + $('#salePrice h4 strong').html() + '</p>');
 			$('#selshipping').html('<p> Shipping: $2.00 </p>');
 			$('#seltax').html('<p> Tax: </p>');
-			$('#seltotal').html('<p> Order Total:        ' +$('#price h3 strong').html() + ' </p>');
+			$('#seltotal').html('<p> Order Total:        ' +$('#price h4 strong').html() + ' </p>');
 			$('#seladdrname').html('');
 			$('#seladdr1').html('');
 			$('#seladdr2').html('');

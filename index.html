@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/product.js"></script>
+</head>
+<body id="product-details">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 prod-left">
+				<div>
+					<img src="images/dress.jpg"></img>
+				</div>
+			</div>
+			<div class="col-md-6 prod-right">
+				<div id="product">
+					<div class="row row-margin" id=name></div>
+					<div class="row row-margin" id=price></div>
+					<div class="row row-margin" id=salePrice>
+						<hr>
+					</div>
+					<div class="row row-margin" id=color></div>
+					<div class="row row-margin" id="size"></div>
+					<div class="row row-margin">
+						<p>
+							<strong>Quantity:</strong>
+						</p>
+					</div>
+					<div class="dropdown">
+						<a aria-expanded="false" aria-haspopup="true" role="button"
+							data-toggle="dropdown" class="dropdown-toggle" href="#"> <span
+							id="selected">Qty</span><span class="caret"></span> </a>
+						<ul class="dropdown-menu">
+							<li><a href="#"> 1</a></li>
+							<li><a href="#"> 2</a></li>
+							<li><a href="#"> 3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+					<div class="row row-margin text-center">
+						<button class="btn btn-primary btn-checkout">Checkout</button>
+						<hr />
+					</div>
+				</div>
+				<div class="row row-margin add-margin">
+					<div class="col-md-6 add-lbl">
+						<span class="glyphicon glyphicon-plus"> Shipping Address</span>
+					</div>
+				</div>
+				<div id="ship-addr" style="display: none">
+					<div class="row row-margin add-margin">
+						<div class="col-md-6">
+							<label for="email">Email:</label> <input type="email" id="email"
+								size="35" value="" required>
+						</div>
+					</div>
+					<div class="row row-margin add-margin">
+						<div class="col-md-6">
+							<label for="fname">First Name:*</label> <input type="text"
+								name="fname" id="fname" size="25" value="">
+						</div>
+						<div class="col-md-6">
+							<label for="lname">Last Name:*</label> <input type="text"
+								name="lname" id="lname" size="25" value="">
+						</div>
+					</div>
+					<div class="row row-margin add-margin">
+						<div class="col-md-12">
+							<label for="fname">Address 1:*</label> <input type="text"
+								name="address1" id="address1" size="50" value="">
+						</div>
+					</div>
+
+					<div class="row row-margin add-margin">
+						<div class="col-md-12">
+							<label for="fname">Address 2:</label> <input type="text"
+								name="address2" id="address2" size="50" value="">
+						</div>
+					</div>
+					<div class="row row-margin add-margin">
+						<div class="col-md-6">
+							<label for="fname">City:*</label> <input type="text" name="city"
+								id="city" size="25" value="">
+						</div>
+						<div class="col-md-6">
+							<label for="lname">State:*</label> <input type="text"
+								name="state" id="state" size="25" value="">
+						</div>
+					</div>
+					<div class="row row-margin add-margin">
+						<div class="col-md-6">
+							<label for="fname">Zip Code:*</label> <input type="text"
+								name="zipcode" id="zipcode" size="5" maxlength="5" value="">
+						</div>
+						<div class="col-md-6">
+							<label for="lname">Phone No:*</label> <input type="text"
+								name="phonenumber" id="phonenumber" size="10" maxlength="10"
+								value="">
+						</div>
+					</div>
+					<div class="row row-margin text-center">
+						<button class="btn btn-primary btn-ordersumary">Continue</button>
+						<hr />
+					</div>
+				</div>
+				<div class="row row-margin add-margin">
+					<div class="col-md-6 order-lbl">
+						<span class="glyphicon glyphicon-plus"> Order Summary</span>
+					</div>
+				</div>
+				<div id="order-summary" style="display: none">
+					<div class="row row-margin">
+						<div class="col-md-6">
+							<div class="row row-margin" id=selorder></div>
+							<div class="row row-margin" id=selshipping></div>
+							<div class="row row-margin" id=seltax></div>
+							<hr>
+							<div class="row row-margin" id=seltotal></div>
+						</div>
+						<div class="col-md-6">
+							<div class="row row-margin" id=seladdrname>
+								<div class="col-md-6"></div>
+								<div class="col-md-6"></div>
+							</div>
+
+							<div class="row row-margin" id=seladdr1></div>
+							<div class="row row-margin" id=seladdr2></div>
+							<div class="row row-margin" id=selcity></div>
+							<div class="row row-margin" id=selzip></div>
+						</div>
+					</div>
+					<div class="row row-margin text-center">
+						<button class="btn btn-primary">Order Now</button>
+						<hr />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
