@@ -1,0 +1,7 @@
+{
+  "name":"Ripped shorts",
+  "price": "$40.00",
+  "discount_price": "$30:00",
+  "size": ["XS","S", "M","L"],
+  "available_colors": ["blue", "wine", "purple"]
+}
